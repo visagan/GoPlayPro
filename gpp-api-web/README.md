@@ -24,7 +24,7 @@ $ cd <project directory>
 $ bower install
 ```
 
-Once the front end dependencies are loaded, you can create/modify application-default.properties to add your oracle datasource values and run:
+Once the front end dependencies are loaded, you can create/modify application.properties to add your mysql datasource values and run:
 ```
 $ ./gradlew bootRun
 ```

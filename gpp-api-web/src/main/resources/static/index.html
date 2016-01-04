@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html data-ng-app="gpp" lang="en">
+<head>
+    <title>GoPlayPro!</title>
+    <style>
+        /* This helps the ng-show/ng-hide animations start at the right place. */
+        /* Since Angular has this but needs to load, this gives us the class early. */
+        .ng-hide {
+            display: none!important;
+        }
+    </style>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css" />
+    <link rel="stylesheet" href="css/gpp.css" />
+</head>
+<body ng-app="gpp">
+    <div ui-view="header"></div>
+    <div ui-view="content" class="container-fluid"></div>
+
+    <!--Core Libraries-->
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-ui-sortable/sortable.min.js"></script>
+    <script type="text/javascript" src="bower_components/ng-file-upload/ng-file-upload.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
+    <script type="text/javascript" src="bower_components/ngInfiniteScroll/build/ng-infinite-scroll.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <!--Startup Module-->
+
+    <script type="text/javascript" src="app/gpp.js"></script>
+
+    <!--Metadata Module-->
+    <script type="text/javascript" src="app/metadata/metadata.module.js"></script>
+    <script type="text/javascript" src="app/metadata/description.service.js"></script>
+
+    <!--Core Modules and Directives-->
+    <script type="text/javascript" src="app/core/core.module.js"></script>
+    <script type="text/javascript" src="app/core/directives/directives.module.js"></script>
+    <script type="text/javascript" src="app/core/directives/keypress.directive.js"></script>
+
+    <!--Page Specific Modules-->
+
+    <!--Item Module-->
+
+    <script type="text/javascript" src="app/elasticSearch/elasticSearch.module.js"></script>
+
+    <!--ElasticSearch.ItemDetail Module-->
+    <script type="text/javascript" src="app/elasticSearch/itemDetail/itemDetail.module.js"></script>
+    <script type="text/javascript" src="app/elasticSearch/itemDetail/itemDetail.dataservice.js"></script>
+    <script type="text/javascript" src="app/elasticSearch/itemDetail/itemDetail.service.js"></script>
+    <script type="text/javascript" src="app/elasticSearch/itemDetail/itemDetail.controller.js"></script>
+
+
+    <script type="text/javascript" src="app/login/login.module.js"></script>
+    <!--Login.Authentication Module-->
+    <script type="text/javascript" src="app/login/authentication/authentication.module.js"></script>
+    <script type="text/javascript" src="app/login/authentication/authentication.dataservice.js"></script>
+    <script type="text/javascript" src="app/login/authentication/authentication.service.js"></script>
+    <script type="text/javascript" src="app/login/authentication/authentication.controller.js"></script>
+
+    <script type="text/javascript" src="app/login/register/register.module.js"></script>
+    <script type="text/javascript" src="app/login/register/register.dataservice.js"></script>
+    <script type="text/javascript" src="app/login/register/register.service.js"></script>
+    <script type="text/javascript" src="app/login/register/register.controller.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+.fadeIn {
+    -webkit-animation-duration: 0.3s; /* Chrome, Safari, Opera */
+    animation-duration: 0.3s;
+}
+
+.bottom-margin {
+    margin-bottom: 10px;
+}
+
+.top-margin {
+    margin-top: 10px;
+}
+
+.qa-input-width {
+    min-width: 200px;
+}
+
+.page-header-top-margin {
+    margin-top: 0.1em;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.small-vertical-padding{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.table {
+    margin-bottom: 0px;
+}
+
+.drop-box {
+    background: #F8F8F8;
+    border: 3px dashed #DDD;
+    /*width: 30em;*/
+    height: 10em;
+    text-align: center;
+}
+
+.dragover {
+    border: 3px dashed darkblue;
+    color: darkblue;
+}
+
+.download {
+    display: block;
+    overflow: auto;
+    position: relative;
+    top: 1.2em;
+}

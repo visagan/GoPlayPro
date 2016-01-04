@@ -1,0 +1,49 @@
+
+<div class="row">
+    <div class="title col-md-12">
+        <h3 class="header page-header-top-margin">Create your team!! </h3>
+    </div>
+</div>
+<div id="searchContainer" class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-8">
+                        <label class="control-label" for="queryString"> Search/Create Your Team: </label><br />
+                        <input id="queryString" type="text" class="form-control"
+                               tgt-key-code="13" tgt-key-press="vm.search();" ng-model="vm.queryString" required>
+                    </div>
+                    <div class="col-md-3">
+                        <br />
+                        <button id="searchButton" class="btn btn-primary" style="margin-top:5px;" type="submit"
+                                ng-keypress="vm.keyboardSearch($event)" ng-click="vm.search();">
+                            <span ng-hide="vm.isSearching" class="fa fa-search"></span>
+                            <span ng-show="vm.isSearching" id="searchSpinner" class="fa fa-lg fa-spinner fa-spin"></span>
+                            Create
+                        </button>
+                        <!--<span ng-show="vm.isSearching" id="searchSpinner" class="fa fa-lg fa-spinner fa-spin"></span>-->
+                    </div>
+                    <div class="col-md-5 animated fadeIn" ng-show="vm.hasSearchResponse" id="searchResponseContainer" >
+                        <br />
+                        <div class="panel panel-default no-bottom-margin" id="searchResponsePanel">
+                            <div class="panel-body" id="searchResponseBody">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="searchResultsContainer" class="animated fadeIn" ng-show="vm.hasSearchResults">
+    <div class="row small-vertical-padding">
+        <div class="col-md-6">
+            <div ui-view="basic"></div>
+        </div>
+    </div>
+</div>
+
+</div><!-- /.modal -->

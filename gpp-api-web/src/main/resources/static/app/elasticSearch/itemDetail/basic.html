@@ -1,0 +1,22 @@
+<div class="container" infinite-scroll="vm.loadFromElasticSearchScroll()" infinite-scroll-distance="2">
+    <div class="table-responsive">
+    <table class="table">
+        <thead>
+        <tr>
+            <th>DepartmentId</th>
+            <th>ClassId</th>
+            <th>ItemId</th>
+            <th>TCIN</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="item in vm.items">
+            <td>{{item._source.departmentId}}</td>
+            <td>{{item._source.classId}}</td>
+            <td>{{item._source.itemId}}</td>
+            <td>{{item._source.tcin}}</td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+</div>

@@ -30,7 +30,7 @@ $ ./gradlew bootRun
 ```
 
 
-# Will be updating the following on more recent and relevant  (Please keep looking at this read for updates!!)
+# Will be updating the following on more recent and relevant  (Please keep looking at this readMe for updates!!)
 1) Git clone the repo 
 
 2) Install mysql latest and start the mysql server (http://blog.joefallon.net/2013/10/install-mysql-on-mac-osx-using-homebrew/)
